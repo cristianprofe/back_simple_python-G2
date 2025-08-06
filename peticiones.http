@@ -1,0 +1,11 @@
+@urlbase = http://localhost:8000
+@usuarios = {{urlbase}}/users
+
+
+POST {{usuarios}}
+Content-Type: application/json
+
+{
+   "email":"algunemail",
+   "password": "algunpasword" 
+}

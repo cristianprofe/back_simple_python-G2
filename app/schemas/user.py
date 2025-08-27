@@ -17,5 +17,7 @@ class UserUpdate(User):
 
 
 class UserCreate(BaseModel):
-    emails: str
+    email: str
     password: str
+    name: str
+    role: str = "alumno"

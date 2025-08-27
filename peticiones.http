@@ -7,5 +7,10 @@ Content-Type: application/json
 
 {
    "email":"algunemail",
-   "password": "algunpasword" 
+   "password": "algunpasword",
+   "name": "jose",
+   "role": "profesor"
 }
+
+###
+GET {{usuarios}}

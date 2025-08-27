@@ -11,8 +11,8 @@ router = APIRouter(prefix="/users", tags=["Usuarios"])
 @router.get(
     "/",
 )  # <- definimos el metodo
-def get_users():  # <- definimos una funcion
-    return [{"id": 1, "name": "Alice"}]  # <- retornando algo
+def get_users(db: Session = Depends(get_db)):  # <- definimos una funcion
+    return user_controller.get_users(db)
 
 
 @router.post("/")
